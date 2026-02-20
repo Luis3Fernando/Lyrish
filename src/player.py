@@ -19,3 +19,7 @@ class MusicPlayer:
     
     def is_playing(self):
         return pygame.mixer.music.get_busy()
+    
+    def get_duration(self, path):
+        sound = pygame.mixer.Sound(path)
+        return sound.get_length()

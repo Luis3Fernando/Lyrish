@@ -48,7 +48,7 @@ def main():
                     typewriter_print(current_phrase)
                     last_phrase = current_phrase
 
-                time.sleep(0.05)
+                time.sleep(0.005)
                 
         except KeyboardInterrupt:
             player.stop()
